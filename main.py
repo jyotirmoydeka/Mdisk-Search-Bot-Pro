@@ -134,8 +134,8 @@ async def message_handler(event):
         )
         message = f'**Click Here 👇 For "{event.text}"**\n\n[🍿🎬 {str(event.text).upper()}\n🍿🎬 {str("Click me for results").upper()}]({tgraph_result})'
         
-        newbutton = [Button.url('🍿 𝐁𝐀𝐂𝐊𝐔𝐏 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🍿',
-                                    f'https://t.me/movies_request_back?start=Watch')],
+            newbutton = [Button.url('🍿 𝐁𝐀𝐂𝐊𝐔𝐏 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🍿',
+                                    f'https://t.me/movies_request_back?start=Watch')], []
                       
         await txt.delete()
         result = await event.reply(message, link_preview=False)
